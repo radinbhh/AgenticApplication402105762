@@ -19,7 +19,7 @@ public class CodeSafetyEvaluator {
             promptBuilder.append(snippet).append("\n");
         }
 
-        promptBuilder.append("I have this code and I want to know whether it is dangerous or not. Just based on the knowledge I gave you, tell me this and then explain yourself what the purpose of the code is:\n");
+        promptBuilder.append("at first just tell me what is the input code that i have gave you. I have this code and I want to know whether it is dangerous or not. Just based on the knowledge I gave you, tell me this and then explain yourself what the purpose of the code is and tell me after you told the code is dangerous or not\n");
         promptBuilder.append(codeSnippet);
 
         // Call Llama 3.2 to evaluate the safety of the code snippet
@@ -60,7 +60,7 @@ public class CodeSafetyEvaluator {
                     return response.toString(); // Return the response from Llama
                 }
             } else {
-                System.out.println("Error: " + responseCode);
+                System.out.println("Error: " + responseCode + "codesafty");
                 return "Error: " + responseCode;
             }
         } catch (IOException e) {

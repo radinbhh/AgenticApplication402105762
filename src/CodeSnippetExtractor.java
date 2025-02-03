@@ -17,7 +17,7 @@ public class CodeSnippetExtractor {
             connection.setRequestProperty("Content-Type", "application/json");
 
             // Create JSON input string
-            String jsonInputString = "{\"model\": \"llama3.2\", \"prompt\": \"" + query + "\"}";
+            String jsonInputString = "{\"model\": \"llama3.2\", \"prompt\": \"" + query + " !!!extract the code part for me please and give it back. don't write anything else." + "\"}";
 
             // Send the request
             try (OutputStream os = connection.getOutputStream()) {
@@ -38,7 +38,7 @@ public class CodeSnippetExtractor {
                     return response.toString(); // Placeholder for actual code snippet extraction
                 }
             } else {
-                System.out.println("Error: " + responseCode);
+                System.out.println("Error: " + responseCode + " codeSnippet");
                 return null;
             }
         } catch (IOException e) {
