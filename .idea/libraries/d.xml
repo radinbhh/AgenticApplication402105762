@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="d" type="repository">
+    <properties maven-id="org.neo4j.driver:neo4j-java-driver:5.25.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/neo4j-java-driver-5.25.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/reactive-streams-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-handler-4.1.113.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-common-4.1.113.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-resolver-4.1.113.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-buffer-4.1.113.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-transport-4.1.113.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-transport-native-unix-common-4.1.113.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-codec-4.1.113.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-tcnative-classes-2.0.66.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/reactor-core-3.6.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
