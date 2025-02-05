@@ -8,8 +8,8 @@ import java.util.List;
 
 public class Neo4jDatabaseHandler {
     private final String uri = "bolt://localhost:7687"; // Use bolt protocol for Neo4j
-    private final String user = "neo4j"; // Default username
-    private final String password = "12345678"; // Set your password here
+    private final String user = "neo4j";
+    private final String password = "12345678";
 
     public List<String> searchSimilarSnippets(String embeddedText) {
         List<String> similarSnippets = new ArrayList<>();

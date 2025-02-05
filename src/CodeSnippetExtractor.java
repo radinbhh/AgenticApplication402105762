@@ -8,14 +8,13 @@ import java.nio.charset.StandardCharsets;
 
 public class CodeSnippetExtractor {
     public String extractCodeSnippet(String query) {
-        String llamaUrl = "http://localhost:11434/api/generate"; // Use localhost for host machine access
+        String llamaUrl = "http://localhost:11434/api/generate";
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(llamaUrl).openConnection();
             connection.setRequestMethod("POST");
             connection.setDoOutput(true);
             connection.setRequestProperty("Content-Type", "application/json");
 
-            // Create JSON input string
             String jsonInputString = "{\"model\": \"llama3.2\", \"prompt\": \"" + query + " !!!extract the code part for me please and give it back. don't write anything else." + "\"}";
 
             try (OutputStream os = connection.getOutputStream()) {
